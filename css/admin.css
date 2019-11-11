@@ -1,0 +1,27 @@
+a, h1{
+    font-size:2rem;
+}
+
+nav{
+    background: rgb(215, 235, 215);
+}
+
+body{
+    background: rgb(237, 243, 237);
+}
+
+form {
+    width:40%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-check{
+    margin:5px;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    background: rgb(119, 216, 119);
+}
