@@ -11,11 +11,7 @@ body{
 }
 
 form {
-    width:40%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    width:70%;
 }
 
 .form-check{
@@ -24,4 +20,31 @@ form {
 
 .custom-control-input:checked~.custom-control-label::before {
     background: rgb(119, 216, 119);
+}
+
+span{
+    cursor: pointer;
+}
+
+#right{
+    width:50%;
+    height: 80vh;
+    float:left;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left{
+    width:50%;
+    float:left;
+    display:flex;
+    flex-direction: column;
+}
+
+#edit{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
 }
