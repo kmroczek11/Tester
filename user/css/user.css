@@ -1,0 +1,31 @@
+a, h1{
+  font-size:2rem;
+}
+
+nav{
+  background: rgb(215, 235, 215);
+}
+
+body{
+  background: rgb(237, 243, 237);
+}
+
+form {
+  width:80%;
+  margin:0 auto;
+}
+
+.header{
+  background:rgb(27, 27, 27);
+  text-align: center;
+  color:white;
+  font-size: 30px;
+}
+
+.form-check{
+  display:'flex';
+  vertical-align: middle;
+  background:rgb(44, 43, 43);
+  color:white;
+  font-size: 25px;
+}

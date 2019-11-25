@@ -50,10 +50,10 @@
         $_SESSION['login'] = $login;
         $_SESSION['password'] = $password;
         if ($login == 'admin'){
-          header('Location: /tester/admin.php');
+          header('Location: /tester/admin/admin.php');
           exit;
        }else{
-        header('Location: /tester/user.php');
+        header('Location: /tester/user/user.php');
         exit;
        }
       }
