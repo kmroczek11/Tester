@@ -78,7 +78,7 @@
           <div class="col-sm-10">
             <div class="form-check">
               <div class="custom-control custom-radio custom-control-inline">
-                <input name="correct" checked="<?php if ($correct == "A") echo "true";?>" type="radio" id="A" value="A" class="custom-control-input">
+                <input name="correct" <?php if ($correct == "A") echo "checked";?> type="radio" id="A" value="A" class="custom-control-input">
                 <label class="custom-control-label" for="A">A</label>
               </div>
               <input name="answer_a" type="text" class="form-check-label" placeholder="<?php echo $answer_a;?>">
@@ -86,7 +86,7 @@
 
             <div class="form-check">
               <div class="custom-control custom-radio custom-control-inline">
-                <input name="correct" checked="<?php if ($correct == "B") echo "true";?>" type="radio" id="B" value="B" class="custom-control-input">
+                <input name="correct"  <?php if ($correct == "B") echo "checked";?> type="radio" id="B" value="B" class="custom-control-input">
                 <label class="custom-control-label" for="B">B</label>
               </div>
               <input name="answer_b" type="text" class="form-check-label" placeholder="<?php echo $answer_b;?>">
@@ -94,7 +94,7 @@
 
             <div class="form-check">
               <div class="custom-control custom-radio custom-control-inline">
-                <input name="correct" checked="<?php if ($correct == "C") echo "true";?>" type="radio" id="C" value="C" class="custom-control-input">
+                <input name="correct"  <?php if ($correct == "C") echo "checked";?> type="radio" id="C" value="C" class="custom-control-input">
                 <label class="custom-control-label" for="C">C</label>
               </div>
               <input name="answer_c" type="text" class="form-check-label" placeholder="<?php echo $answer_c;?>">
@@ -102,7 +102,7 @@
 
             <div class="form-check">
               <div class="custom-control custom-radio custom-control-inline">
-                <input name="correct" checked="<?php if ($correct == "D") echo "true";?>" type="radio" id="D" value="D" class="custom-control-input">
+                <input name="correct"  <?php if ($correct == "D") echo "checked";?> type="radio" id="D" value="D" class="custom-control-input">
                 <label class="custom-control-label" for="D">D</label>
               </div>
               <input name="answer_d" type="text" class="form-check-label" placeholder="<?php echo $answer_d;?>">

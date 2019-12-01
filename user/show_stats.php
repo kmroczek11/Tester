@@ -17,7 +17,13 @@
     ?>
     <div id="middle">
     <?php
-      include 'get_random_questions.php';
+      $correct = 0;
+      $incorrect = 0;
+      for ($i = 0; $i < sizeof($_SESSION['userAnswers']); $i++) {
+        ($_SESSION['userAnswers'][$i] == $_SESSION['correctAnswers'][$i] ? $correct += 1 : $incorrect += 1);
+      } 
+      echo("Poprawnych: ".$correct);
+      echo("Niepoprawnych: ".$incorrect);
     ?>
     </div>
 

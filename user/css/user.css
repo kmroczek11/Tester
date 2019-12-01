@@ -1,31 +1,43 @@
-a, h1{
-  font-size:2rem;
+a,
+h1 {
+  font-size: 2rem;
 }
 
-nav{
+nav {
   background: rgb(215, 235, 215);
 }
 
-body{
+body {
   background: rgb(237, 243, 237);
 }
 
 form {
-  width:80%;
-  margin:0 auto;
+  display:flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.header{
-  background:rgb(27, 27, 27);
+.header {
+  background: rgb(27, 27, 27);
   text-align: center;
-  color:white;
-  font-size: 30px;
+  color: white;
+  font-size: 20px;
 }
 
-.form-check{
-  display:'flex';
+.form-check {
+  display: "flex";
   vertical-align: middle;
-  background:rgb(44, 43, 43);
-  color:white;
-  font-size: 25px;
+  background: rgb(44, 43, 43);
+  color: white;
+  font-size: 15px;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+  background: rgb(95, 100, 95);
+}
+
+#finishTest{
+  margin:10px;
+  align-self: center;
 }

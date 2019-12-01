@@ -27,7 +27,7 @@ span{
 }
 
 #right{
-    width:30%;
+    width:35%;
     height: 80vh;
     float:left;
     display:flex;
@@ -36,7 +36,7 @@ span{
 }
 
 #left{
-    width:70%;
+    width:65%;
     float:left;
     display:flex;
     flex-direction: column;
