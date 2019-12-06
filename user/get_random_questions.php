@@ -18,14 +18,14 @@
         }
         header('Refresh: 0; url=show_stats.php');
         exit;
-    } else{
+    } else {
         $_SESSION['correctAnswers'] = array();
     }
 
     echo ("<form method='post' action='user.php'>");
     $row = $randQuestions->fetch_array();
     while ($row){
-        array_push($_SESSION['correctAnswers'], $row['correct']);
+        array_push($_SESSION['correctAnswers'], (object) ['question_id' => $row['question_id'], 'correct' => $row['correct']]);
         echo ("
         <div class='header'>"
             .$row['question'].

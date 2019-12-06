@@ -10,30 +10,11 @@ body{
     background: rgb(237, 243, 237);
 }
 
-form {
-    width:70%;
-}
-
-.form-check{
-    margin:5px;
-}
-
-.custom-control-input:checked~.custom-control-label::before {
-    background: rgb(119, 216, 119);
-}
-
-span{
-    cursor: pointer;
-}
-
 #right{
     width:40%;
-    height: 80vh;
     float:left;
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 #left{

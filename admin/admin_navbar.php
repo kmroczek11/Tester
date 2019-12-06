@@ -7,17 +7,17 @@
       <ul class="navbar-nav mr-auto">
         <li class="nav-item
         <?php 
-        if (strpos($_SERVER['REQUEST_URI'], 'admin'))
+        if (strpos($_SERVER['REQUEST_URI'], 'admin/admin'))
           echo (" active");
         ?>">
           <a class="nav-link" href="admin.php">Pytania</a>
         </li>
         <li class="nav-item
         <?php 
-        if (strpos($_SERVER['REQUEST_URI'], 'deleteUsers'))
+        if (strpos($_SERVER['REQUEST_URI'], 'delete_users'))
           echo (" active");
         ?>">
-          <a class="nav-link" href="deleteUsers.php">Usuwanie użytkowników</a>
+          <a class="nav-link" href="delete_users.php">Usuwanie użytkowników</a>
         </li>
         <li class="nav-item
         <?php 

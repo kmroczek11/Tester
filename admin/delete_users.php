@@ -23,10 +23,12 @@
     echo ("<thead><tr><th scope='col'>#</th><th scope='col'>Login</th>
     <th scope='col'>Password</th><th scope='col'>Usuń</th></tr></thead>");
     while ($row){
+      if ($row["login"] != "admin"){
         echo ("<tr><th class='align-middle' scope='row'>".$row["user_id"]."</th>
         <td class='align-middle'>".$row["login"]."</td><td class='align-middle'>".$row["password"]."</td>
         <td><a href='deleteUsers.php?user_id=".$row["user_id"]."'><span class='fa fa-trash'></td></tr>");
-        $row = $table->fetch_array();
+      }
+      $row = $table->fetch_array();
     }
     echo ("</table>");
 

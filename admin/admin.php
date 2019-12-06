@@ -19,18 +19,13 @@
       <?php 
         include 'questions.php'; 
       ?>
-
-      <div id="edit">
-        <?php
-          if (isset($_GET['action']) == 'edit')
-            include 'edit_question.php'; 
-        ?>
-      </div>
-
     </div>
     <div id="right">
       <?php 
-        include 'add_question.php'; 
+        include 'add_question.php';
+
+        if (isset($_GET['action']) == 'edit')
+          include 'edit_question.php'; 
       ?>
     </div>
 </div>

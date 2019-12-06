@@ -21,7 +21,7 @@
         $correct = $row['correct'];
     }
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST["edit"])) {
 
       if (isset($_POST["question"])){
         $question = $_POST["question"];
@@ -43,8 +43,8 @@
         $answer_d = $_POST["answer_d"];
       }
 
-      if (isset($_POST["correct"])){
-        $correct = $_POST["correct"];
+      if (isset($_POST["edit"])){
+        $correct = $_POST["edit"];
       }
 
       $question = test_input($question);
@@ -69,7 +69,7 @@
         <div class="form-group row">
           <label for="question" class="col-sm-3 col-form-label">Edytuj pytanie</label>
           <div class="col-sm-8">
-            <input name="question" type="text" class="form-control" id="question" placeholder="<?php echo $question;?>">
+            <input name="question" type="text" class="form-control" id="question" value="<?php echo $question;?>" placeholder="<?php echo $question;?>">
           </div>
         </div>
         <fieldset class="form-group">
@@ -78,34 +78,34 @@
           <div class="col-sm-10">
             <div class="form-check">
               <div class="custom-control custom-radio custom-control-inline">
-                <input name="correct" <?php if ($correct == "A") echo "checked";?> type="radio" id="A" value="A" class="custom-control-input">
-                <label class="custom-control-label" for="A">A</label>
+                <input name="edit" <?php if ($correct == "A") echo "checked";?> type="radio" id="edit_a" value="A" class="custom-control-input">
+                <label class="custom-control-label" for="edit_a">A</label>
               </div>
-              <input name="answer_a" type="text" class="form-check-label" placeholder="<?php echo $answer_a;?>">
+              <input name="answer_a" type="text" class="form-check-label" value="<?php echo $answer_a;?>" placeholder="<?php echo $answer_a;?>">
             </div>
 
             <div class="form-check">
               <div class="custom-control custom-radio custom-control-inline">
-                <input name="correct"  <?php if ($correct == "B") echo "checked";?> type="radio" id="B" value="B" class="custom-control-input">
-                <label class="custom-control-label" for="B">B</label>
+                <input name="edit"  <?php if ($correct == "B") echo "checked";?> type="radio" id="edit_b" value="B" class="custom-control-input">
+                <label class="custom-control-label" for="edit_b">B</label>
               </div>
-              <input name="answer_b" type="text" class="form-check-label" placeholder="<?php echo $answer_b;?>">
+              <input name="answer_b" type="text" class="form-check-label" value="<?php echo $answer_b;?>" placeholder="<?php echo $answer_b;?>">
             </div>
 
             <div class="form-check">
               <div class="custom-control custom-radio custom-control-inline">
-                <input name="correct"  <?php if ($correct == "C") echo "checked";?> type="radio" id="C" value="C" class="custom-control-input">
-                <label class="custom-control-label" for="C">C</label>
+                <input name="edit"  <?php if ($correct == "C") echo "checked";?> type="radio" id="edit_c" value="C" class="custom-control-input">
+                <label class="custom-control-label" for="edit_c">C</label>
               </div>
-              <input name="answer_c" type="text" class="form-check-label" placeholder="<?php echo $answer_c;?>">
+              <input name="answer_c" type="text" class="form-check-label" value="<?php echo $answer_c;?>" placeholder="<?php echo $answer_c;?>">
             </div>
 
             <div class="form-check">
               <div class="custom-control custom-radio custom-control-inline">
-                <input name="correct"  <?php if ($correct == "D") echo "checked";?> type="radio" id="D" value="D" class="custom-control-input">
-                <label class="custom-control-label" for="D">D</label>
+                <input name="edit"  <?php if ($correct == "D") echo "checked";?> type="radio" id="edit_d" value="D" class="custom-control-input">
+                <label class="custom-control-label" for="edit_d">D</label>
               </div>
-              <input name="answer_d" type="text" class="form-check-label" placeholder="<?php echo $answer_d;?>">
+              <input name="answer_d" type="text" class="form-check-label" value="<?php echo $answer_d;?>" placeholder="<?php echo $answer_d;?>">
             </div>
 
           </div>

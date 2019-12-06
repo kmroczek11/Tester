@@ -1,14 +1,13 @@
 <?php
     require_once "functions.php";
-
+  
     $conn = @new mysqli('localhost', 'root', '', 'tester');
     if ($conn->connect_errno) die('No Connection.');//errno zawiera numery błędów
 
     $question = $answer_a = $answer_b = $answer_c = $answer_d = $correct = "";
     $err = 1;
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
+    if (isset($_POST["correct"])) {
       $question = $_POST["question"];
       $answer_a = $_POST["answer_a"];
       $answer_b = $_POST["answer_b"];

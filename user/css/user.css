@@ -41,3 +41,19 @@ form {
   margin:10px;
   align-self: center;
 }
+
+#right{
+  display:flex;
+  height:80vh;
+  width:50%;
+}
+
+#left{
+  display:flex;
+  width:50%;
+  height:80vh;
+  float:left;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

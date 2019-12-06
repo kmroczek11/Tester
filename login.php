@@ -95,9 +95,9 @@
         echo ("<div class='alert alert-danger'>$passErr</div>")
       ?>
     </div>
-    <div class="checkbox">
+    <!-- <div class="checkbox">
       <label><input type="checkbox"> Zapamiętaj mnie</label>
-    </div>
+    </div> -->
     <a href="register.php"> Zarejestruj</a><br/>
     <button type="submit" class="btn btn-success">Zaloguj</button>
     <?php if (!$success)
